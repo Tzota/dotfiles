@@ -1,0 +1,194 @@
+{
+/*
+	// Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/	"tmp": {
+	"prefix": "tmp",
+	"body": "{id: 'shared.fulfillment.requestIssues.${0}'}",
+},
+	"unit test's describe": {
+		"prefix": "cds",
+		"body": [
+			"describe('${1:Описание_сьюта}', () => {",
+				"$0",
+			"});"
+		],
+		"description": "Добавить describe"
+	},
+	"unit test's it": {
+		"prefix": "cit",
+		"body": [
+			"it('${1:Описание_кейса}', () => {",
+				"$0",
+			"});"
+		],
+		"description": "Добавить describe"
+	},
+	"unit test's expect": {
+		"prefix": "cex",
+		"body": [
+			"expect(${1}).toBe(${0});"
+		],
+		"description": "Добавить expect"
+	},
+	"flow's init": {
+		"prefix": "fi",
+		"body": "// @flow\n\n",
+		"description": "добавить @flow"
+	},
+	"flow's ignore": {
+		"prefix": "fignore",
+		"body": "// \\$ExpectError<лень воспроизводить весь объект>",
+		"description": "Заигнорить флоу"
+	},
+	"region": {
+		"prefix": "region",
+		"body": "// #region ${0}\n// #endregion",
+		"description": "добавить #region"
+	},
+	"require": {
+		"prefix": "rqr",
+		"body": "const {${0}} = require('${1}');",
+		"description": "добавить common js require"
+	},
+	"import": {
+		"prefix": "mprt",
+		"body": "import {${0}} from '${1}';",
+		"description": "добавить js module import"
+	},
+	"eslint-disable-next-line": {
+		"prefix": "ednl",
+		"body": "// eslint-disable-next-line ${0}",
+		"description": "добавить eslint-disable-next-line"
+	},
+	"istanbul ignore file": {
+		"prefix": "iif",
+		"body": "/* istanbul ignore file */",
+		"description": "добавить istanbul ignore file"
+	},
+	"istanbul ignore next": {
+		"prefix": "iin",
+		"body": "/* istanbul ignore next */",
+		"description": "добавить istanbul ignore next"
+	},
+	"create empty React component": {
+		"prefix": "cerc",
+		"description": "пустой шаблон React компонента",
+		"body": ["// @flow",
+		"",
+		"import React, {type Node} from 'react';",
+		"import {connect} from 'react-redux';",
+		"import {compose, type HOC, withProps, mapProps, withHandlers} from 'recompose';",
+		"",
+		"import Text from 'b2b/components/Text';",
+		"",
+		"import I18n from '~/containers/I18n';",
+		"// import {} from 'shared/types/...';",
+		"",
+		"import type {State} from '../../types';",
+		"",
+		"import css from './style.css';",
+		"",
+		"type OwnProps = {|",
+		"|};",
+		"type Props = {|",
+		"    ...OwnProps,",
+		"|};",
+        "",
+		"const ${TM_DIRECTORY/(.*)\\/(.+)$/$2/} = ({",
+		"}: Props) => (",
+		");",
+        "",
+		"export {${TM_DIRECTORY/(.*)\\/(.+)$/$2/} as Base};",
+		"",
+		"export const mapStateToProps",
+		"    : State => *",
+		"    = ({app: {params, state}, page}) => ({",
+		"    });",
+		"",
+		"export const enhance: HOC<Props, OwnProps> = compose(",
+		"    connect(mapStateToProps, {}),",
+		");",
+		"",
+		"export default enhance(${TM_DIRECTORY/(.*)\\/(.+)$/$2/});",
+		""],
+	},
+	"create empty control spec": {
+		"prefix": "cecs",
+		"description": "Пустой шаблон для теста контрола",
+		"body": [
+			"/* @flow */",
+			"",
+			"import React from 'react';",
+			"import {Provider} from 'react-redux';",
+			"import mockStore from '~/spec/mocks/store';",
+			"import {mount, shallow} from 'enzyme';",
+			"import Mocks from 'b2b/spec/mocks';",
+			"import withI18n from '~/containers/withI18n';",
+			"import {enhance, Base, mapStateToProps} from '../';",
+			"",
+			"const ${TM_DIRECTORY/(.*)\\/(.+)\\/spec/$2/} = withI18n(Base);",
+			"const {BaseComponent: MockComponent} = Mocks;",
+			"",
+			"describe('${TM_DIRECTORY/(.*)\\/(.+)\\/spec/$2/}', () => {",
+			"    it('рендерится', () => {",
+			"        const props = {};",
+			"        const panel = mount(<${TM_DIRECTORY/(.*)\\/(.+)\\/spec/$2/} {...props} />);",
+			"",
+			"        expect(panel).toMatchSnapshot();",
+			"    });",
+			"});",
+			"",
+			"describe('mapStateToProps', () => {",
+			"    it('извлекает свойство ...', () => {",
+			"        const state = {app: {state: {}, params: {}}, page: {}};",
+			"        // \\$FlowIgnore не хочу воспроизводить весь стейт",
+			"        const actual = mapStateToProps(state);",
+			"",
+			"        expect(actual).toHaveProperty('...', '');",
+			"    });",
+			"});",
+			"",
+			"describe('enhance', () => {",
+			"    const Enhanced = enhance(MockComponent);",
+			"",
+			"    it('рендерится', () => {",
+			"        const state = {app: {state: {}, params: {}}, page: {}};",
+			"        const store = mockStore({state});",
+			"        const wrapper = mount(<Provider store={store}><Enhanced /></Provider>);",
+			"",
+			"        expect(wrapper.find('Nothing')).toHaveLength(0);",
+			"    });",
+			"    it('не рендерится', () => {",
+			"        const state = {app: {state: {}, params: {}}, page: {}};",
+			"        const store = mockStore({state});",
+			"        const wrapper = mount(<Provider store={store}><Enhanced /></Provider>);",
+			"",
+			"        expect(wrapper.find('Nothing')).toHaveLength(1);",
+			"    });",
+			"});",
+		]
+	},
+	"jest mock control": {
+		"prefix": "jmc",
+		"description": "мока контрола для джеста",
+		"body": [
+			"jest.mock('${1}', () => {",
+			"    const ${2} = ({children}) => children || '';",
+			"",
+			"    return ${2};",
+			"});"
+		]
+	}
+}

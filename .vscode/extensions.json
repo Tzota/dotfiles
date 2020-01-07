@@ -1,0 +1,34 @@
+{
+	// See http://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+        // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+        "formulahendry.auto-rename-tag",
+        "ms-vscode.csharp",
+        "k--kato.docomment",
+        "msjsdiag.debugger-for-chrome",
+        "ms-azuretools.vscode-docker",
+        "editorconfig.editorconfig",
+		"dbaeumer.vscode-eslint",
+        "flowtype.flow-for-vscode",
+        "eamodio.gitlens",
+        "akamud.vscode-javascript-snippet-pack",
+        "be5invis.vscode-icontheme-nomo-dark",
+        "alexcrome.parallel-folders",
+        "ryu1kn.partial-diff",
+        "esbenp.prettier-vscode",
+        "guardrex.status-bar-tasks",
+        "mrmlnc.vscode-stylefmt",
+        "sandy081.todotasks",
+        "visualstudioexptteam.vscodeintellicode",
+		"DotJoshJohnson.xml",
+		// candidates
+		"sysoev.language-stylus",
+		// maybe
+        "vscjava.vscode-java-pack",
+        "johnstoncode.svn-scm",
+        "vscode-ext.sync-rsync",
+        "EffectiveLabs.showtestresults",
+		"formulahendry.auto-close-tag",
+	]
+}

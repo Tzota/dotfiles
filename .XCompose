@@ -1,0 +1,16 @@
+# https://askubuntu.com/questions/70784/how-can-i-enable-compose-key
+# импортируем дефолтовый файл для нашей локали
+include "%L"
+
+<Multi_key> <bar> <greater>	:	"⊳"
+<Multi_key> <bar> <less>	:	"⊲"
+<Multi_key> <minus> <asciicircum>	:	"∆"
+<Multi_key> <asciicircum> <minus>	:	"∇"
+<Multi_key> <minus> <Right> <Right> : "→"
+<Multi_key> <minus> <Left> <Left> : "←"
+<Multi_key> <minus> <Up> <Up> : "↑"
+<Multi_key> <minus> <Down> <Down> : "↓"
+<Multi_key> <KP_Subtract> <Right> <Right> : "→"
+<Multi_key> <KP_Subtract> <Left> <Left> : "←"
+<Multi_key> <KP_Subtract> <Up> <Up> : "↑"
+<Multi_key> <KP_Subtract> <Down> <Down> : "↓"

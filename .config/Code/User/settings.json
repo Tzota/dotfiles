@@ -1,0 +1,95 @@
+{
+    "[javascript]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false,
+        "files.trimTrailingWhitespace": false
+    },
+    "[json]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "mrmlnc.vscode-stylefmt"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.multiCursorPaste": "spread",
+    "debug.inlineValues": true,
+    "editor.fontFamily": "iosevka, 'Fira Code', Consolas, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 17,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.wordWrap": "off",
+    "files.trimTrailingWhitespace": true,
+    // "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/node_modules": true,
+        "/node_modules": true
+    },
+    "terminal.integrated.shell.linux": "zsh",
+    "css.validate": false,
+    "scss.validate": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "gitlens.keymap": "chorded",
+    "search.exclude": {
+        "**/node_modules": true,
+        "/node_modules": true
+    },
+    "search.useIgnoreFiles": true,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "window.zoomLevel": 0,
+    "workbench.colorCustomizations": {
+        "[Default Light+]": {
+            "editor.lineHighlightBackground": "#faf0dc",
+            "activityBar.activeBackground": "#9ACD32"
+        },
+        "[Default Dark+]": {
+            "editor.lineHighlightBackground": "#333333"
+        }
+    },
+    "javascript.implicitProjectConfig.checkJs": true,
+    "javascript.suggest.autoImports": false, // автоимпоритит всякую хрень
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.colorTheme": "Default Light+",
+    "editor.foldingStrategy": "indentation",
+    "terminal.integrated.rendererType": "dom",
+    "telemetry.enableTelemetry": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "breadcrumbs.enabled": true,
+    "workbench.settings.editor": "json",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "files.autoSave": "off",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+    "svn.enableProposedApi": "none",
+    "numberedBookmarks.navigateThroughAllFiles": "replace",
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.showWords": false // не хочу подсказки, собранные из простого текста, что есть в файле
+}
