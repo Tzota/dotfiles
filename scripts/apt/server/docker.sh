@@ -13,12 +13,13 @@ apt-get install \
     gnupg-agent \
     software-properties-common
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg > /tmp/docker.gpg
+apt-key add /tmp/docker.gpg
 
-add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
+# LINE="deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+LINE="deb https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+add-apt-repository $LINE
 
 # INSTALL DOCKER ENGINE - COMMUNITY
 
@@ -31,4 +32,4 @@ docker run hello-world
 # https://docs.docker.com/install/linux/linux-postinstall/
 # rm -rf ~/.docker/
 # groupadd docker
-# usermod -aG docker $USER
+usermod -aG docker $USER
