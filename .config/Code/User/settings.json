@@ -36,7 +36,7 @@
     "editor.renderWhitespace": "none",
     "editor.wordWrap": "off",
     "files.trimTrailingWhitespace": true,
-    // "files.insertFinalNewline": true,
+    "files.insertFinalNewline": true,
     "files.exclude": {
         "**/node_modules": true,
         "/node_modules": true
@@ -76,7 +76,6 @@
     "javascript.implicitProjectConfig.checkJs": true,
     "javascript.suggest.autoImports": false, // автоимпоритит всякую хрень
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.colorTheme": "Default Light+",
     "editor.foldingStrategy": "indentation",
     "terminal.integrated.rendererType": "experimentalWebgl",
     "telemetry.enableTelemetry": false,
@@ -85,10 +84,17 @@
     "workbench.settings.editor": "json",
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
     "editor.suggestSelection": "first",
-    "svn.enableProposedApi": "none",
     "numberedBookmarks.navigateThroughAllFiles": "replace",
     "editor.wordBasedSuggestions": false,
-    "editor.suggest.showWords": false // не хочу подсказки, собранные из простого текста, что есть в файле
+    "editor.suggest.showWords": false, // не хочу подсказки, собранные из простого текста, что есть в файле
+    "vim.useCtrlKeys": false,
+    "vim.useSystemClipboard": true,
+    "vim.foldfix": true,
+    "go.toolsGopath": "~/golib",
+    "workbench.colorTheme": "Default Light+",
+    "editor.tokenColorCustomizations": {
+        "semanticHighlighting": true
+    },
 }

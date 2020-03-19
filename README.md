@@ -15,3 +15,7 @@ TBD:
 * иосевка
 * nginx
 * postgresql
+* go
+  * wget с сервера
+  * распаковать в /usr/local/go
+  * в .zshrc добавить изменения в PATH и GOPATH

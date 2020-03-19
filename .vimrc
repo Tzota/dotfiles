@@ -4,7 +4,7 @@ set hlsearch
 " show current line number
 set number relativenumber
 
-" i use source control instead of backup files
+" I use source control instead of backup files
 set nobackup
 set noswapfile
 
