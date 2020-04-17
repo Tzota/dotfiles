@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 # https://docs.docker.com/install/linux/docker-ce/ubuntu/
 

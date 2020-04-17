@@ -97,4 +97,6 @@
     "editor.tokenColorCustomizations": {
         "semanticHighlighting": true
     },
+    "javascript.preferences.importModuleSpecifierEnding":"minimal",
+    "editor.renameOnType": true,
 }

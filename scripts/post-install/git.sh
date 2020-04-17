@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 git config --global user.name "Daniyal Guliev"
 git config --global user.email tzota@mail.ru

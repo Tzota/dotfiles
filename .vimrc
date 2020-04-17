@@ -45,3 +45,6 @@ set mouse=a
 
 " Display quotes in json in all modes
 set conceallevel=0
+
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"

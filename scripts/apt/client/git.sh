@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 # Не помню, нужно ли. Возможно, серверный гит всё притащит.
 
