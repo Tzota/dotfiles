@@ -99,4 +99,7 @@
     },
     "javascript.preferences.importModuleSpecifierEnding":"minimal",
     "editor.renameOnType": true,
+    "git.autofetch": true,
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
 }

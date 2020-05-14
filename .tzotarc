@@ -1,0 +1,7 @@
+export EDITOR='vim'
+
+# вместо алиаса
+ll() {
+  ls -lAhF --group-directories-first "$@"
+}
+export -f ll

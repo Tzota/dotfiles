@@ -17,6 +17,10 @@
 	"prefix": "tmp",
 	"body": "{id: 'shared.fulfillment.requestIssues.${0}'}",
 },
+	"json stringify": {
+		"prefix": "jsnstr",
+		"body": "JSON.stringify(${1}, null, 4)"
+	},
 	"unit test's describe": {
 		"prefix": "cds",
 		"body": [

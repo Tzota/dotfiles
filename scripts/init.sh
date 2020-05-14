@@ -8,3 +8,6 @@ ln -s $DIR/.vimrc ~/.vimrc
 ln -s $DIR/.XCompose ~/.XCompose
 ln -s $DIR/.prettierrc ~/.prettierrc
 ln -s $DIR/.tmux.conf ~/.tmux.conf
+ln -s $DIR/.tzotarc ~/.tzotarc
+
+echo "source ~/.tzotarc" >> ~/.bashrc

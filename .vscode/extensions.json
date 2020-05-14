@@ -4,7 +4,7 @@
 	"recommendations": [
         // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
         "formulahendry.auto-rename-tag",
-        "ms-vscode.csharp",
+        // "ms-vscode.csharp",
         "k--kato.docomment",
         "msjsdiag.debugger-for-chrome",
         "ms-azuretools.vscode-docker",
@@ -17,7 +17,7 @@
         "alexcrome.parallel-folders",
         "ryu1kn.partial-diff",
         "esbenp.prettier-vscode",
-        "guardrex.status-bar-tasks",
+        // "guardrex.status-bar-tasks",
         "mrmlnc.vscode-stylefmt",
         "sandy081.todotasks",
         "visualstudioexptteam.vscodeintellicode",
