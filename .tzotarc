@@ -1,5 +1,16 @@
 export EDITOR='vim'
 
+bindkey -v
+bindkey '^r' history-incremental-search-backward
+
+#go
+#export PATH=$PATH:/usr/local/go/bin
+#export GOPATH=$HOME/golib:$HOME/go
+
+#tmuxinator требует ruby из PATH
+#source ~/.config/tmuxinator.zsh
+
+
 # вместо алиаса
 ll() {
   ls -lAhF --group-directories-first "$@"
@@ -10,3 +21,5 @@ tree-2() {
   tree -L 2 -d "$@"
 }
 export -f tree-2
+
+
