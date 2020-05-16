@@ -5,3 +5,8 @@ ll() {
   ls -lAhF --group-directories-first "$@"
 }
 export -f ll
+
+tree-2() {
+  tree -L 2 -d "$@"
+}
+export -f tree-2
