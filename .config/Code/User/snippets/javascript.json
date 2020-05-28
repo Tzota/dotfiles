@@ -53,7 +53,7 @@
 	},
 	"flow's ignore": {
 		"prefix": "fignore",
-		"body": "// \\$ExpectError<лень воспроизводить весь объект>",
+		"body": "// \\$FlowIgnore<лень воспроизводить весь объект>",
 		"description": "Заигнорить флоу"
 	},
 	"region": {
@@ -193,6 +193,16 @@
 			"",
 			"    return ${2};",
 			"});"
+		]
+	},
+	"jest mock module": {
+		"prefix": "jmm",
+		"description": "мока es модуля для джеста",
+		"body": [
+			"jest.mock('${1}', () => ({",
+			"    __esModule: true,",
+			"    ${2}",
+			"}));"
 		]
 	}
 }

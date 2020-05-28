@@ -11,15 +11,31 @@ bindkey '^r' history-incremental-search-backward
 #source ~/.config/tmuxinator.zsh
 
 
-# вместо алиаса
-ll() {
+# вместо алиасов
+lll() {
+  ls -lhF --group-directories-first "$@"
+}
+lla() {
   ls -lAhF --group-directories-first "$@"
 }
-export -f ll
 
-tree-2() {
+tree2() {
   tree -L 2 -d "$@"
 }
-export -f tree-2
+
+tns() {
+ tmux new-session -s "$@"
+}
 
 
+if [ "$SHELL" = "/usr/bin/zsh" ]; then
+  export ll
+  export la
+  export tree2
+  export tns
+else
+  export -f ll
+  export -f la
+  export -f tree2
+  export -f tns
+fi

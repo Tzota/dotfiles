@@ -94,9 +94,7 @@
     "vim.foldfix": true,
     "go.toolsGopath": "~/golib",
     "workbench.colorTheme": "Default Light+",
-    "editor.tokenColorCustomizations": {
-        "semanticHighlighting": true
-    },
+    "editor.semanticTokenColorCustomizations": {"[Default Light+]": {"enabled": true}, "[Default Dark+]": {"enabled": true}},
     "javascript.preferences.importModuleSpecifierEnding":"minimal",
     "editor.renameOnType": true,
     "git.autofetch": true,
