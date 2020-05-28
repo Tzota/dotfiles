@@ -29,13 +29,13 @@ tns() {
 
 
 if [ "$SHELL" = "/usr/bin/zsh" ]; then
-  export ll
-  export la
+  export lll
+  export lla
   export tree2
   export tns
 else
-  export -f ll
-  export -f la
+  export -f lll
+  export -f lla
   export -f tree2
   export -f tns
 fi
