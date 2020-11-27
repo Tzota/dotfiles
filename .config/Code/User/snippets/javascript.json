@@ -16,10 +16,14 @@
 */	"tmp": {
 	"prefix": "tmp",
 	"body": "{id: 'shared.fulfillment.requestIssues.${0}'}",
-},
+	},
 	"json stringify": {
 		"prefix": "jsnstr",
 		"body": "JSON.stringify(${1}, null, 4)"
+	},
+	"console visible log": {
+		"prefix": "clnnn",
+		"body": "console.log('\\n\\n${2}\\n\\n', ${1}, '\\n\\n/${2}\\n\\n');"
 	},
 	"unit test's describe": {
 		"prefix": "cds",
@@ -86,6 +90,11 @@
 		"body": "/* istanbul ignore next */",
 		"description": "добавить istanbul ignore next"
 	},
+	"istanbul ignore next for default": {
+		"prefix": "iindef",
+		"body": "/* istanbul ignore next не вижу смысла проверять присвоение значения по умолчанию, это же конструкция языка */",
+		"description": "добавить iin для значений по умолчанию"
+	},
 	"create empty React component": {
 		"prefix": "cerc",
 		"description": "пустой шаблон React компонента",
@@ -95,7 +104,7 @@
 		"import {connect} from 'react-redux';",
 		"import {compose, type HOC, withProps, mapProps, withHandlers} from 'recompose';",
 		"",
-		"import Text from 'b2b/components/Text';",
+		"import {Text} from '@yandex-levitan/b2b';",
 		"",
 		"import I18n from '~/containers/I18n';",
 		"// import {} from 'shared/types/...';",
@@ -106,6 +115,7 @@
 		"",
 		"type OwnProps = {|",
 		"|};",
+		"type MappedProps = {||};",
 		"type Props = {|",
 		"    ...OwnProps,",
 		"|};",
@@ -116,10 +126,8 @@
         "",
 		"export {${TM_DIRECTORY/(.*)\\/(.+)$/$2/} as Base};",
 		"",
-		"export const mapStateToProps",
-		"    : State => *",
-		"    = ({app: {params, state}, page}) => ({",
-		"    });",
+		"export function mapStateToProps(state: State): MappedProps {",
+		"};",
 		"",
 		"export const enhance: HOC<Props, OwnProps> = compose(",
 		"    connect(mapStateToProps, {}),",

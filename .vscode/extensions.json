@@ -1,15 +1,13 @@
 {
-	// See http://go.microsoft.com/fwlink/?LinkId=827846
-	// for the documentation about the extensions.json format
-	"recommendations": [
-        // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+    // See http://go.microsoft.com/fwlink/?LinkId=827846
+    // for the documentation about the extensions.json format
+    "recommendations": [
+        // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp,
+        "vscodevim.vim",
         "formulahendry.auto-rename-tag",
-        // "ms-vscode.csharp",
-        "k--kato.docomment",
-        "msjsdiag.debugger-for-chrome",
         "ms-azuretools.vscode-docker",
         "editorconfig.editorconfig",
-		"dbaeumer.vscode-eslint",
+        "dbaeumer.vscode-eslint",
         "flowtype.flow-for-vscode",
         "eamodio.gitlens",
         "akamud.vscode-javascript-snippet-pack",
@@ -21,14 +19,21 @@
         "mrmlnc.vscode-stylefmt",
         "sandy081.todotasks",
         "visualstudioexptteam.vscodeintellicode",
-		"DotJoshJohnson.xml",
-		// candidates
-		"sysoev.language-stylus",
-		// maybe
+        "DotJoshJohnson.xml",
+        "jebbs.plantuml",
+        // candidates
+        "ms-vscode.hexeditor",
+        // maybe
+        "ms-python.python",
+        "golang.go",
+        "ms-vscode.cpptools",
+        "ms-dotnettools.csharp",
+        "k--kato.docomment",
+        "msjsdiag.debugger-for-chrome",
         "vscjava.vscode-java-pack",
         "johnstoncode.svn-scm",
         "vscode-ext.sync-rsync",
         "EffectiveLabs.showtestresults",
-		"formulahendry.auto-close-tag",
-	]
+        "formulahendry.auto-close-tag"
+    ]
 }

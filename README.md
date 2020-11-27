@@ -1,6 +1,7 @@
 # dotfiles
 * соурсить .tzotarc только если это первый раз
 * перед созданием линка копировать старый вариант в .bak, если это не ссылка
+* [ -f ~/.bash_aliases ] && source $HOME/.bash_aliases
 TBD:
 
 ## client

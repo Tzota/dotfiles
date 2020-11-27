@@ -27,14 +27,32 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.multiCursorPaste": "spread",
-    "debug.inlineValues": true,
+    "[csharp]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true
+    },
+    "editor.find.cursorMoveOnType": false, // https://code.visualstudio.com/updates/v1_49#_find-cursor-move-on-type-control
     "editor.fontFamily": "iosevka, 'Fira Code', Consolas, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file", // https://code.visualstudio.com/updates/v1_49#_only-format-modified-text
+    "editor.multiCursorPaste": "spread",
+    "editor.tabSize": 4,
+    "debug.inlineValues": true,
     "editor.fontLigatures": true,
     "editor.fontSize": 17,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.wordWrap": "off",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.foldingStrategy": "indentation",
+    "editor.suggestSelection": "first",
+    "editor.semanticTokenColorCustomizations": {
+        "[Default Light+]": {"enabled": true},
+        "[Default Dark+]": {"enabled": true}
+    },
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.showWords": false, // не хочу подсказки, собранные из простого текста, что есть в файле
+    "editor.renameOnType": true,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.exclude": {
@@ -75,29 +93,33 @@
     },
     "javascript.implicitProjectConfig.checkJs": true,
     "javascript.suggest.autoImports": false, // автоимпоритит всякую хрень
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.foldingStrategy": "indentation",
-    "terminal.integrated.rendererType": "experimentalWebgl",
-    "telemetry.enableTelemetry": false,
+    "javascript.preferences.importModuleSpecifierEnding": "minimal",
     "gitlens.advanced.telemetry.enabled": false,
-    "breadcrumbs.enabled": true,
-    "workbench.settings.editor": "json",
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "telemetry.enableTelemetry": false,
+    "breadcrumbs.enabled": true,
     "files.autoSave": "afterDelay",
-    "editor.suggestSelection": "first",
     "numberedBookmarks.navigateThroughAllFiles": "replace",
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.showWords": false, // не хочу подсказки, собранные из простого текста, что есть в файле
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
     "vim.foldfix": true,
-    "go.toolsGopath": "~/golib",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "workbench.settings.editor": "json",
     "workbench.colorTheme": "Default Light+",
-    "editor.semanticTokenColorCustomizations": {"[Default Light+]": {"enabled": true}, "[Default Dark+]": {"enabled": true}},
-    "javascript.preferences.importModuleSpecifierEnding":"minimal",
-    "editor.renameOnType": true,
     "git.autofetch": true,
+    "go.toolsGopath": "~/golib",
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
+    "arduino.path": "/home/tzota/Programs/arduino-1.8.12",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "workbench.tree.indent": 16,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false
 }
