@@ -7,6 +7,8 @@ dpkg -i packages-microsoft-prod.deb
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install dotnet-sdk-3.1
+sudo apt-get install dotnet-sdk-3.1 aspnetcore-runtime-3.1 dotnet-runtime-3.1
 
 rm packages-microsoft-prod.deb
+
+dotnet tool install -g dotnet-script

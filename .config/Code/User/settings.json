@@ -15,8 +15,14 @@
         "files.trimTrailingWhitespace": false
     },
     "[json]": {
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.formatOnSave": false
+    },
+    "[md]": {
+        "editor.formatOnSave": false
     },
     "[css]": {
         "editor.defaultFormatter": "mrmlnc.vscode-stylefmt"
@@ -31,15 +37,16 @@
         "editor.tabSize": 4,
         "editor.formatOnSave": true
     },
+    "debug.inlineValues": true,
     "editor.find.cursorMoveOnType": false, // https://code.visualstudio.com/updates/v1_49#_find-cursor-move-on-type-control
     "editor.fontFamily": "iosevka, 'Fira Code', Consolas, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file", // https://code.visualstudio.com/updates/v1_49#_only-format-modified-text
-    "editor.multiCursorPaste": "spread",
-    "editor.tabSize": 4,
-    "debug.inlineValues": true,
     "editor.fontLigatures": true,
     "editor.fontSize": 17,
+    "editor.linkedEditing": true,
+    "editor.multiCursorPaste": "spread",
+    "editor.tabSize": 4,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.wordWrap": "off",
