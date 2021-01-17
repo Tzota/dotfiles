@@ -10,4 +10,4 @@ ln -s $DIR/.prettierrc ~/.prettierrc
 ln -s $DIR/.tmux.conf ~/.tmux.conf
 ln -s $DIR/.tzotarc ~/.tzotarc
 
-echo "\nsource ~/.tzotarc" >> ~/.bashrc
+grep -qxF 'source ~/.tzotarc' ~/.bashrc || printf "\n\nsource ~/.tzotarc" >> ~/.bashrc
