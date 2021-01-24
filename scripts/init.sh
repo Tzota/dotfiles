@@ -11,3 +11,5 @@ ln -s $DIR/.tmux.conf ~/.tmux.conf
 ln -s $DIR/.tzotarc ~/.tzotarc
 
 grep -qxF 'source ~/.tzotarc' ~/.bashrc || printf "\n\nsource ~/.tzotarc" >> ~/.bashrc
+
+grep -qx 'fs.inotify.max_user_watches=524288' /etc/sysctl.conf || printf "\n\n# tzota - fs watch\nfs.inotify.max_user_watches=524288\n\n" >> /etc/sysctl.conf
