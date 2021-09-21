@@ -1,5 +1,5 @@
 {
-	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
+	// Place your snippets for typescript here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
@@ -100,44 +100,6 @@
 			"    ${2}",
 			"}));"
 		]
-	},
-	"create empty React component": {
-		"prefix": "cerc",
-		"description": "пустой шаблон React компонента",
-		"body": [
-			"import React, {FunctionComponent} from 'react';",
-			"import {connect} from 'react-redux';",
-			"import {compose} from 'recompose';",
-			"// b2b",
-			"import Text from 'b2b/components/Text';",
-			"// common",
-			"import {HOC} from '~/types';",
-			"// page",
-			"import {",
-			"    Page,",
-			"} from '......./types';",
-			"import css from './style.css';",
-			"",
-			"interface Props {",
-			"}",
-			"const ${TM_DIRECTORY/(.*)\\/(.+)$/$2/}: FunctionComponent<Props> = ({",
-			"}) => (",
-			"    <div>",
-			"        ${TM_DIRECTORY/(.*)\\/(.+)$/$2/}",
-			"    </div>",
-			");",
-			"",
-			"const mapStateToProps = ({page}: {page: Page}) => ({",
-			"    page,",
-			"});",
-			"",
-			"const enhance: HOC<Props, {}> = compose(",
-			"    connect(mapStateToProps),",
-			");",
-			"",
-			"export default enhance(${TM_DIRECTORY/(.*)\\/(.+)$/$2/});",
-
-		],
 	},
 	"fokkin' ts' enum": {
 		"prefix": "fte",

@@ -14,7 +14,18 @@
         "editor.quickSuggestions": false,
         "files.trimTrailingWhitespace": false
     },
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 8,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[json]": {
+        "editor.tabSize": 4,
         "editor.formatOnSave": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -39,6 +50,7 @@
     },
     "debug.inlineValues": true,
     "editor.find.cursorMoveOnType": false, // https://code.visualstudio.com/updates/v1_49#_find-cursor-move-on-type-control
+    "editor.foldingImportsByDefault": true,
     "editor.fontFamily": "iosevka, 'Fira Code', Consolas, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file", // https://code.visualstudio.com/updates/v1_49#_only-format-modified-text
@@ -46,7 +58,7 @@
     "editor.fontSize": 17,
     "editor.linkedEditing": true,
     "editor.multiCursorPaste": "spread",
-    "editor.tabSize": 4,
+    "editor.tabSize": 8,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.wordWrap": "off",
@@ -59,14 +71,21 @@
     },
     "editor.wordBasedSuggestions": false,
     "editor.suggest.showWords": false, // не хочу подсказки, собранные из простого текста, что есть в файле
-    "editor.renameOnType": true,
+    "eslint.validate": ["javascript", "javascriptreact", "typescriptreact", "typescript"],
+    "javascript.suggest.autoImports": true,
+    "javascript.preferences.importModuleSpecifierEnding": "minimal",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "javascript.validate.enable": true,
+    "js/ts.implicitProjectConfig.checkJs": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.exclude": {
         "**/node_modules": true,
         "/node_modules": true
     },
-    "terminal.integrated.shell.linux": "zsh",
+
     "css.validate": false,
     "scss.validate": false,
     "gitlens.advanced.messages": {
@@ -75,11 +94,7 @@
         "suppressFileNotUnderSourceControlWarning": false,
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true,
-        "suppressUpdateNotice": false,
-        "suppressWelcomeNotice": true
+        "suppressNoRepositoryWarning": false
     },
     "gitlens.keymap": "chorded",
     "search.exclude": {
@@ -88,7 +103,6 @@
     },
     "search.useIgnoreFiles": true,
     "workbench.iconTheme": "vs-nomo-dark",
-    "window.zoomLevel": 0,
     "workbench.colorCustomizations": {
         "[Default Light+]": {
             "editor.lineHighlightBackground": "#faf0dc",
@@ -98,13 +112,8 @@
             "editor.lineHighlightBackground": "#333333"
         }
     },
-    "javascript.implicitProjectConfig.checkJs": true,
-    "javascript.suggest.autoImports": false, // автоимпоритит всякую хрень
-    "javascript.preferences.importModuleSpecifierEnding": "minimal",
-    "gitlens.advanced.telemetry.enabled": false,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
     "terminal.integrated.rendererType": "experimentalWebgl",
+    "terminal.integrated.shell.linux": "zsh",
     "telemetry.enableTelemetry": false,
     "breadcrumbs.enabled": true,
     "files.autoSave": "afterDelay",
@@ -124,9 +133,11 @@
     "go.toolsGopath": "~/golib",
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
     "arduino.path": "/home/tzota/Programs/arduino-1.8.12",
-    "javascript.updateImportsOnFileMove.enabled": "never",
     "workbench.tree.indent": 16,
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
 }

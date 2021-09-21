@@ -39,3 +39,7 @@ else
   export -f tree2
   export -f tns
 fi
+
+if [ -f ~/.tzotasecrets ]; then
+  source ~/.tzotasecrets # Не светим токенами, если шарим конфиг шелла между тачками
+fi
