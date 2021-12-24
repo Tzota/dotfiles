@@ -149,5 +149,9 @@
   "workbench.tree.indent": 16,
   "editor.cursorStyle": "line",
   "editor.lineNumbers": "on",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "window.zoomLevel": -1,
+  "files.associations": {
+    ".yatzotarc": "shellscript"
+  }
 }

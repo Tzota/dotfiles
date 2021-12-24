@@ -28,7 +28,8 @@
         "vscodevim.vim",
         "visualstudioexptteam.vscodeintellicode",
         "zxh404.vscode-proto3",
-        "DotJoshJohnson.xml"
+        "DotJoshJohnson.xml",
+        "eamodio.gitlens"
 
         // deprecated
         // "eamodio.gitlens",

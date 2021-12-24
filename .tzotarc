@@ -1,14 +1,15 @@
+export PATH="$HOME/bin:$PATH"
 export EDITOR='vim'
 
 bindkey -v
 bindkey '^r' history-incremental-search-backward
 
 #go
-#export PATH=$PATH:/usr/local/go/bin
-#export GOPATH=$HOME/golib:$HOME/go
+#!!!***export PATH=$PATH:/usr/local/go/bin
+#!!!***export GOPATH=$HOME/golib:$HOME/go
 
 #tmuxinator требует ruby из PATH
-#source ~/.config/tmuxinator.zsh
+#!!!***source ~/.config/tmuxinator.zsh
 
 
 # вместо алиасов

@@ -1,36 +1,45 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+echo '-------------------1'
+
 # https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 # SET UP THE REPOSITORY
 
-apt-get update
+sudo apt-get update
 
-apt-get install \
-    apt-transport-https \
+sudo apt-get install \
     ca-certificates \
     curl \
-    gnupg-agent \
-    software-properties-common
+    gnupg \
+    lsb-release
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg > /tmp/docker.gpg
-apt-key add /tmp/docker.gpg
+echo '-------------------2'
 
-# LINE="deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-LINE="deb https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+# curl -fsSL https://download.docker.com/linux/ubuntu/gpg > /tmp/docker.gpg
+# apt-key add /tmp/docker.gpg
 
-add-apt-repository $LINE
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo '-------------------3'
+# LINE="deb https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+# add-apt-repository $LINE
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # INSTALL DOCKER ENGINE - COMMUNITY
 
-apt-get update
+echo '-------------------4'
+sudo apt-get update
 
-apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 
-docker run hello-world
-
+echo '-------------------5'
 # https://docs.docker.com/install/linux/linux-postinstall/
 # rm -rf ~/.docker/
-# groupadd docker
-usermod -aG docker $USER
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+#sudo docker run hello-world
