@@ -2,7 +2,7 @@ set nocompatible
 set hlsearch
 
 " show current line number
-set number relativenumber
+set number " relativenumber
 
 " I use source control instead of backup files
 set nobackup

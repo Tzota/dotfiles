@@ -14,9 +14,6 @@
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "": {
-    "editor.formatOnSave": false
-  },
   "[css]": {
     "editor.defaultFormatter": "mrmlnc.vscode-stylefmt"
   },
@@ -43,14 +40,15 @@
   "editor.multiCursorPaste": "spread",
   "editor.tabSize": 4,
   "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.wordWrap": "off",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.foldingStrategy": "indentation",
   "editor.suggestSelection": "first",
   "editor.semanticTokenColorCustomizations": {
     "[Default Light+]": { "enabled": true },
-    "[Default Dark+]": { "enabled": true }
+    "[Default Dark+]": { "enabled": true },
+    "[Solarized Light]": { "enabled": true }
   },
   "editor.wordBasedSuggestions": false,
   "editor.suggest.showWords": false, // не хочу подсказки, собранные из простого текста, что есть в файле
@@ -75,8 +73,9 @@
     "В": true,
     "Е": true,
     "О": true,
-    "А": true
-},
+    "А": true,
+    "Х": true
+  },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -113,7 +112,6 @@
     "/node_modules": true
   },
   "search.useIgnoreFiles": true,
-  "workbench.iconTheme": "vs-nomo-dark",
   "workbench.colorCustomizations": {
     "[Default Light+]": {
       "editor.lineHighlightBackground": "#faf0dc",
@@ -121,14 +119,24 @@
     },
     "[Default Dark+]": {
       "editor.lineHighlightBackground": "#333333"
+    },
+    "[Solarized Light]": {
+      "editor.selectionHighlightBackground": "#d3cab9"
+    },
+    "[Atom One Light]": {
+      "editor.selectionHighlightBackground": "#d3cab9"
+    },
+    "tab.unfocusedActiveBorder": "#fff0"
+  },
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "zsh"
     }
   },
-  "terminal.integrated.rendererType": "experimentalWebgl",
-  "terminal.integrated.shell.linux": "zsh",
-  "telemetry.enableTelemetry": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "telemetry.telemetryLevel": "off",
   "breadcrumbs.enabled": true,
   "files.autoSave": "afterDelay",
-  "numberedBookmarks.navigateThroughAllFiles": "replace",
   "vim.useCtrlKeys": false,
   "vim.useSystemClipboard": true,
   "vim.foldfix": true,
@@ -150,8 +158,8 @@
   "editor.cursorStyle": "line",
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "window.zoomLevel": -1,
   "files.associations": {
     ".yatzotarc": "shellscript"
-  }
+  },
+  "window.zoomLevel": -1
 }

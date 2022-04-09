@@ -197,7 +197,7 @@
 		"description": "мока контрола для джеста",
 		"body": [
 			"jest.mock('${1}', () => {",
-			"    const ${2} = ({children}) => children || '';",
+			"    const ${2} = ({children}: {children: React.ReactNode}) => children || '';",
 			"",
 			"    return ${2};",
 			"});"
