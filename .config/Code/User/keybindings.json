@@ -1,82 +1,97 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-  {
-    "key": "shift+numpad7",
-    "command": "cursorHomeSelect",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+numpad1",
-    "command": "cursorEndSelect",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+k s",
-    "command": "workbench.action.files.saveAll"
-  },
-  {
-    "key": "ctrl+shift+[BracketLeft]",
-    "command": "editor.foldRecursively"
-  },
-  {
-    "key": "ctrl+shift+[BracketRight]",
-    "command": "editor.unfoldRecursively"
-  },
-  {
-    "key": "ctrl+[BracketLeft]",
-    "command": "editor.fold"
-  },
-  {
-    "key": "ctrl+[BracketRight]",
-    "command": "editor.unfold"
-  },
-  {
-    "key": "ctrl+[Backquote]",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "meta+ctrl+shift+alt+down",
-    "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "meta+ctrl+shift+alt+up",
-    "command": "editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+q",
-    "command": "-workbench.action.quit"
-  },
-  {
-    "key": "ctrl+1",
-    "command": "-numberedBookmarks.jumpToBookmark1",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+2",
-    "command": "-numberedBookmarks.jumpToBookmark2",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+3",
-    "command": "-numberedBookmarks.jumpToBookmark3",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+pagedown",
-    "command": "workbench.action.moveEditorToNextGroup"
-  },
-  {
-    "key": "ctrl+alt+right",
-    "command": "-workbench.action.moveEditorToNextGroup"
-  },
-  {
-    "key": "ctrl+alt+pageup",
-    "command": "workbench.action.moveEditorToPreviousGroup"
-  },
-  {
-    "key": "ctrl+alt+left",
-    "command": "-workbench.action.moveEditorToPreviousGroup"
-  }
+    {
+        "key": "shift+numpad7",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+numpad1",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k s",
+        "command": "workbench.action.files.saveAll"
+    },
+    {
+        "key": "ctrl+shift+[BracketLeft]",
+        "command": "editor.foldRecursively"
+    },
+    {
+        "key": "ctrl+shift+[BracketRight]",
+        "command": "editor.unfoldRecursively"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "editor.fold"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "editor.unfold"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[Backquote]",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "meta+ctrl+shift+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "meta+ctrl+shift+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "-numberedBookmarks.jumpToBookmark1",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "-numberedBookmarks.jumpToBookmark2",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "-numberedBookmarks.jumpToBookmark3",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+pagedown",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+alt+pageup",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-extension.vim_ctrl+[",
+        "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
+    }
 ]

@@ -44,3 +44,5 @@ fi
 if [ -f ~/.tzotasecrets ]; then
   source ~/.tzotasecrets # Не светим токенами, если шарим конфиг шелла между тачками
 fi
+
+alias cls='tput reset && tmux clear-history && date'
