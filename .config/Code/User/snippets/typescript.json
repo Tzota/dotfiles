@@ -16,23 +16,37 @@
         "prefix": "jsnstr",
         "body": "JSON.stringify(${1}, null, 4)"
     },
+    "console.log": {
+        "prefix": "cl",
+        "body": "console.log(${1});"
+    },
     "console visible log": {
         "prefix": "clnnn",
         "body": "console.log('\\n\\n${2}\\n\\n', ${1}, '\\n\\n/${2}\\n\\n');"
     },
     "unit test's describe": {
         "prefix": "cds",
-        "body": ["describe('${1:Описание_сьюта}', () => {", "$0", "});"],
+        "body": [
+            "describe('${1:Описание_сьюта}', () => {",
+            "$0",
+            "});"
+        ],
         "description": "Добавить describe"
     },
     "unit test's it": {
         "prefix": "cit",
-        "body": ["it('${1:Описание_кейса}', () => {", "$0", "});"],
+        "body": [
+            "it('${1:Описание_кейса}', () => {",
+            "$0",
+            "});"
+        ],
         "description": "Добавить describe"
     },
     "unit test's expect": {
         "prefix": "cex",
-        "body": ["expect(${1}).toBe(${0});"],
+        "body": [
+            "expect(${1}).toBe(${0});"
+        ],
         "description": "Добавить expect"
     },
     "region": {
@@ -84,28 +98,50 @@
     "jest mock module": {
         "prefix": "jmm",
         "description": "мока es модуля для джеста",
-        "body": ["jest.mock('${1}', () => ({", "    __esModule: true,", "    ${2}", "}));"]
+        "body": [
+            "jest.mock('${1}', () => ({",
+            "    __esModule: true,",
+            "    ${2}",
+            "}));"
+        ]
     },
     "fokkin' ts' enum": {
         "prefix": "fte",
         "description": "енум в ts удивительно коряв",
-        "body": ["type ${1}Key = keyof typeof ${1};", "type ${1}Enum = typeof ${1}[${1}Key];"]
+        "body": [
+            "type ${1}Key = keyof typeof ${1};",
+            "type ${1}Enum = typeof ${1}[${1}Key];"
+        ]
     },
     "sleep": {
         "prefix": "sleep",
         "description": "js-style async sleep",
-        "body": ["await new Promise(r => setTimeout(r, 2000));"]
+        "body": [
+            "await new Promise(r => setTimeout(r, 2000));"
+        ]
     },
     "given": {
         "prefix": "gvn",
-        "body": ["await given(async () =>{", "    ${0}", "});"]
+        "body": [
+            "await given(async () =>{",
+            "    ${0}",
+            "});"
+        ]
     },
     "when": {
         "prefix": "whn",
-        "body": ["await when(async () =>{", "    ${0}", "});"]
+        "body": [
+            "await when(async () =>{",
+            "    ${0}",
+            "});"
+        ]
     },
     "then": {
         "prefix": "thn",
-        "body": ["await then(async () =>{", "    ${0}", "});"]
+        "body": [
+            "await then(async () =>{",
+            "    ${0}",
+            "});"
+        ]
     }
 }

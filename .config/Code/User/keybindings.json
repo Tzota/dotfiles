@@ -54,21 +54,6 @@
         "command": "-workbench.action.quit"
     },
     {
-        "key": "ctrl+1",
-        "command": "-numberedBookmarks.jumpToBookmark1",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+2",
-        "command": "-numberedBookmarks.jumpToBookmark2",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+3",
-        "command": "-numberedBookmarks.jumpToBookmark3",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "ctrl+alt+pagedown",
         "command": "workbench.action.moveEditorToNextGroup"
     },
@@ -93,5 +78,10 @@
         "key": "ctrl+[",
         "command": "-extension.vim_ctrl+[",
         "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-intelliboba.selectionRequest",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
